@@ -3,7 +3,7 @@ An easy to use docker image for hosting Nebula Proxy in docker, without having t
 
 This Repository does not yet garuntee support for Marketplace or Games, only the Proxy Service.
 
-This Repository uses ```elijahn372/nebula-docker``` from Docker Hub
+This Repository uses [```elijahn372/nebula-docker```](https://hub.docker.com/layers/elijahn372/nebula-docker/v2.0/images/sha256:43c968f092525a6e05362fa207ceb2a873bdb79d5ac515ea41f0175d49e6c626?uuid=852F6A3F-AAA3-4DAB-8EC3-4D3D18C87DA1) from Docker Hub
 
 This will not always have the most up to date Nebula version or its dependencies. It is recommended that you try to follow the instructions on the original github if it is possible for you.  
 [Original GitHub](https://github.com/NebulaServices/Nebula)
