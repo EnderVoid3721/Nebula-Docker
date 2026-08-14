@@ -1,0 +1,39 @@
+services:
+  nebula:
+    command: null
+    container_name: nebula-06
+    deploy:
+      resources:
+        limits:
+          cpus: "1.00"
+          memory: 7.22GB
+        reservations:
+          cpus: "0.00"
+          memory: 512MB
+      placement: {}
+    entrypoint:
+      - /data/start.sh
+    image: nebula-alpine-docker:v2
+    network_mode: bridge
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "5377"
+        protocol: tcp
+    privileged: true
+    pull_policy: never
+    restart: on-failure
+    volumes:
+      - type: bind
+        source: /DATA/appdata/nebula
+        target: /data
+x-casaos:
+  hostname: 192.168.1.228
+  index: /
+  is_uncontrolled: false
+  main: nebula
+  port_map: "5377"
+  scheme: http
+  store_app_id: positive_eleanor
+  title:
+    custom: Nebula
