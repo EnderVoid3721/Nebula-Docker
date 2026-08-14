@@ -24,5 +24,5 @@ services:
     restart: on-failure
     volumes:
       - type: bind
-        source: /DATA/appdata/nebula
+        source: ./../nebula
         target: /data
